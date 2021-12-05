@@ -13,3 +13,10 @@ output:
 ---
  
 Coming Soon!
+
+```{r eval = FALSE}
+library(rmarkdown)
+# output_dir <- "./output"
+render("index.Rmd", output_dir = "./docs")
+```
+
