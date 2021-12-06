@@ -1,22 +1,29 @@
 ---
 # title: "Divine Cafe"
 image: "divineLOGOv2.PNG"
-links:
-  - label: Facebook
-    url: "https://linkedin.com/"
-  - label: Instagram
-    url: "https://twitter.com/"
-  - label: Email
-    url: "mailto:email@email.com"
+# links:
+#   - label: Facebook
+#     url: "https://linkedin.com/"
+#   - label: Instagram
+#     url: "https://twitter.com/"
+#   - label: Email
+#     url: "mailto:email@email.com"
 output:
   postcards::jolla
 ---
  
 Coming Soon!
 
-```{r eval = FALSE}
+```{r warnings = FALSE, message=FALSE, eval = FALSE, include=FALSE}
 library(rmarkdown)
+library(knitr)
 # output_dir <- "./output"
 render("index.Rmd", output_dir = "./docs")
 ```
 
+```{r warnings = FALSE,echo=FALSE, message=FALSE,out.width = '100%'}
+
+knitr::include_app("https://www.google.com/maps/d/u/1/embed?mid=1-oJD653LPlhBvc9K1fwJvAMnq3HQ_YDp", height ="480")
+```
+
+<!-- <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1-oJD653LPlhBvc9K1fwJvAMnq3HQ_YDp" width="640" height="480"></iframe> -->
