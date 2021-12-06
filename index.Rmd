@@ -12,7 +12,15 @@ output:
   postcards::jolla
 ---
  
-Coming Soon!
+**Coming Soon!**
+
+Dear Local Customers,
+
+We are relocating to Parc Village, Macquarie in 2022!
+Checkout website for news or come by after the new year to our new cafe and bar....
+
+Merry Christmas 
+from Cherie and team
 
 ```{r warnings = FALSE, message=FALSE, eval = FALSE, include=FALSE}
 library(rmarkdown)
