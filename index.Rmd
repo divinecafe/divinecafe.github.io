@@ -19,7 +19,7 @@ Dear Local Customers,
 We are relocating to Parc Village, Macquarie in 2022!
 Checkout website for news or come by after the new year to our new cafe and bar....
 
-Merry Christmas 
+Merry Christmas,
 from Cherie and team
 
 ```{r warnings = FALSE, message=FALSE, eval = FALSE, include=FALSE}
@@ -30,8 +30,12 @@ render("index.Rmd", output_dir = "./docs")
 ```
 
 ```{r warnings = FALSE,echo=FALSE, message=FALSE,out.width = '100%'}
+#impove this map
+#raw mapping data
 
-knitr::include_app("https://www.google.com/maps/d/u/1/embed?mid=1-oJD653LPlhBvc9K1fwJvAMnq3HQ_YDp", height ="480")
+##Leaflet map?
 ```
+
+<!--Email updates-->
 
 <!-- <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1-oJD653LPlhBvc9K1fwJvAMnq3HQ_YDp" width="640" height="480"></iframe> -->
