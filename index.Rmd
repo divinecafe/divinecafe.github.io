@@ -1,15 +1,17 @@
 ---
 # title: "Divine Cafe"
 image: "images/path2099.png"
-# links:
-#   - label: Facebook
-#     url: "https://linkedin.com/"
-#   - label: Instagram
-#     url: "https://twitter.com/"
-#   - label: Email
-#     url: "mailto:email@email.com"
-output:
-  postcards::jolla
+links:
+  - label: Phone
+    url: "https://linkedin.com/"
+  - label: Email
+    url: "mailto:admin@divinecafeandbar.com"
+  - label: DoorDash
+    url: 
+output:   
+  postcards::jolla:
+    includes:
+      after_body: "assets/footer.html"
 ---
  
 **Coming Soon!**
@@ -25,9 +27,12 @@ output:
 ```{r warnings = FALSE, message=FALSE, eval = FALSE, include=FALSE}
 library(rmarkdown)
 library(knitr)
-# output_dir <- "./output"
-render("index.Rmd", output_dir = "./docs")
+
 ```
+
+
+***
+
 
 ```{r warnings = FALSE,echo=FALSE, message=FALSE,out.width = '100%'}
 #iframe
@@ -39,6 +44,8 @@ knitr::include_app("https://www.google.com/maps/d/embed?mid=1Lo7d7u0elvj-2Bi0gmc
 ##Leaflet map?
 ```
 
-<!--Email updates-->
+***
 
+<!--Email updates-->
+<!-- Old not working -->
 <!-- <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1-oJD653LPlhBvc9K1fwJvAMnq3HQ_YDp" width="640" height="480"></iframe> -->
