@@ -1,6 +1,6 @@
 ---
 title: "Divine Cafe"
-# css: main-minimal.css
+css: "assets/css/main-minimal.css"
 image: "images/logo/path2099.png"
 # links:
 #   - label: Phone
@@ -13,7 +13,7 @@ output:
   html_document:
   # postcards::jolla:
     includes:
-      before_body: "assets/html_templates/base.html"
+      # before_body: "assets/html_templates/base.html"
       after_body: "assets/html_templates/footer.html"
       # css:"main.css"
 ---
@@ -64,7 +64,7 @@ Anything that you're willing to practice, you can do.
 ***
 
 
-```{r warnings = FALSE,echo=FALSE, message=FALSE,out.width = '100%'}
+```{r warnings = FALSE,echo=FALSE, message=FALSE,out.width = '10%', fig.align='center'}
 #iframe
 knitr::include_app("https://www.google.com/maps/d/embed?mid=1Lo7d7u0elvj-2Bi0gmcd7ecPZYQfvfow&ehbc=2E312F", height="480")
   
@@ -87,12 +87,29 @@ knitr::include_app("https://www.google.com/maps/d/embed?mid=1Lo7d7u0elvj-2Bi0gmc
 </div>
   
 <div class = "col-md-4">
-``{r, message=FALSE, echo=FALSE}
+
+```{r, message=FALSE, echo=FALSE}
+library(tidyverse)
 ggplot( mtcars, aes(x=mpg)) + geom_histogram(fill="skyblue", alpha=0.5) + theme_minimal()
-``
-</div>
+```
+
 </div>
 
 <!--Email updates-->
 <!-- Old not working -->
 <!-- <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1-oJD653LPlhBvc9K1fwJvAMnq3HQ_YDp" width="640" height="480"></iframe> -->
+
+</div>
+
+```{r}
+library(fontawesome)
+fontawesome::fa(name="github")
+fontawesome::fa(name="facebook")
+```
+
+<div>
+<!-- <p style="text-align: center;"> -->
+    <a href="https://github.com/davan690/" class="fa fa-github"></a>
+<!-- </p> -->
+</div>
+
