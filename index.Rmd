@@ -1,19 +1,43 @@
 ---
-# title: "Divine Cafe"
-image: "images/path2099.png"
-links:
-  - label: Phone
-    url: "https://linkedin.com/"
-  - label: Email
-    url: "mailto:admin@divinecafeandbar.com"
-  - label: DoorDash
-    url: 
-output:   
-  postcards::jolla:
+title: "Divine Cafe"
+# css: main-minimal.css
+image: "images/logo/path2099.png"
+# links:
+#   - label: Phone
+#     url: "https://linkedin.com/"
+#   - label: Email
+#     url: "mailto:admin@divinecafeandbar.com"
+#   - label: DoorDash
+#     url: 
+output:
+  html_document:
+  # postcards::jolla:
     includes:
-      after_body: "assets/footer.html"
+      before_body: "assets/html_templates/base.html"
+      after_body: "assets/html_templates/footer.html"
+      # css:"main.css"
 ---
  
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
+library(fontawesome)
+```
+
+# Just a few tests with `r fa("font-awesome-logo-full", fill = "forestgreen")`
+
+It works well in headings...
+
+# `r fa("r-project", fill = "steelblue")` H1 Heading
+
+## `r fa("r-project", fill = "steelblue")` H2 Heading
+
+### `r fa("r-project", fill = "steelblue")` H3 Heading
+
+#### `r fa("r-project", fill = "steelblue")` H4 Heading
+
+##### `r fa("r-project", fill = "steelblue")` H5 Heading
+
+...and works equally well within inline text: `r fa("r-project", fill = "steelblue")`.
+
 **Coming Soon!**
 
 <!-- Dear Local Customers, -->
@@ -30,6 +54,12 @@ library(knitr)
 
 ```
 
+::: {.b--gray .ba .bw2 .ma2 .pa4 .shadow-1}
+Talent is a pursued interest.
+Anything that you're willing to practice, you can do.
+
+—Bob Ross
+:::
 
 ***
 
@@ -45,6 +75,23 @@ knitr::include_app("https://www.google.com/maps/d/embed?mid=1Lo7d7u0elvj-2Bi0gmc
 ```
 
 ***
+
+<div class = "row">
+  
+<div class = "col-md-4">
+<br><br>Since R Markdown use the [bootstrap framework](https://getbootstrap.com/docs/4.0/layout/grid/) under the hood. It is possible to benefit its powerful grid system. Basically, you can consider that your row is divided in 12 subunits of same width. You can then choose to use only a few of this subunits.
+</div>
+  
+<div class = "col-md-4">
+<br><br>Here, I use 3 subunits of size 4 (4x3=12). The last column is used for a plot. You can read more about the grid system [here](bootstrap grid system). I got this result showing the following code in my R Markdown document.
+</div>
+  
+<div class = "col-md-4">
+``{r, message=FALSE, echo=FALSE}
+ggplot( mtcars, aes(x=mpg)) + geom_histogram(fill="skyblue", alpha=0.5) + theme_minimal()
+``
+</div>
+</div>
 
 <!--Email updates-->
 <!-- Old not working -->
