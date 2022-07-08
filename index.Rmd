@@ -2,20 +2,6 @@
 title: "Divine Cafe"
 css: "assets/css/main-minimal.css"
 image: "images/logo/path2099.png"
-# links:
-#   - label: Phone
-#     url: "https://linkedin.com/"
-#   - label: Email
-#     url: "mailto:admin@divinecafeandbar.com"
-#   - label: DoorDash
-#     url: 
-output:
-  html_document:
-  # postcards::jolla:
-    includes:
-      # before_body: "assets/html_templates/base.html"
-      after_body: "assets/html_templates/footer.html"
-      # css:"main.css"
 ---
  
 ```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
@@ -61,7 +47,6 @@ Anything that you're willing to practice, you can do.
 —Bob Ross
 :::
 
-***
 
 
 ```{r warnings = FALSE,echo=FALSE, message=FALSE,out.width = '10%', fig.align='center'}
