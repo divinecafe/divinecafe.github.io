@@ -8,7 +8,7 @@ davan690.github.io
 header style
 */
 
-html{
+html {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -18,22 +18,25 @@ html{
 background style
 */
 
-body{
+body {
   background-image: url(./images/Dishes/PadThai/padThai1.png);
   height: 100%;
   background-position: center;
   background-size: cover;
   position: relative;
   color: white;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Neuton', serif;
   font-size: 25px;
 }
 
 .topleft {
   position: absolute;
   zoom: 0.2;
-  top: 0;
+  top: 32 px;
   left: 32 px;
+  font-family: 'Neuton', serif;
+  font-size: 82px;
+  color: black;
 }
 
 .topright {
@@ -56,7 +59,7 @@ body{
   text-align: center;
 }
 
-.hr{
+.hr {
   margin: auto;
   width: 40%;
 }
