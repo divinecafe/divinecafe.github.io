@@ -29,6 +29,10 @@ body {
   font-size: 25px;
 }
 
+/*
+Custom blocks
+*/
+
 .topleft {
   position: absolute;
   zoom: 0.2;
