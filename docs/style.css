@@ -70,8 +70,7 @@ Custom blocks
   width: 40%;
 }
 
-.centreButton {
-  position: absolute;
+.centreButton .button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -81,9 +80,41 @@ Custom blocks
   /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 17px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: white;
 }
