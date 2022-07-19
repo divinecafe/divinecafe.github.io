@@ -1,6 +1,32 @@
+---
+title: Divine cafe and bar 2022
+subtitle: About
+lastmod: 2022-07-16T02:27:34.195Z
+---
+
+
 # divineCafe
 
-An open-source website for a local canberra cafe build with RMarkdown. The following packages are needed for this to work in a current version of RStudio (>4.0.0).
+An open-source website for a local canberra cafe build with RMarkdown.
+
+## Software
+
+To render this information you can download the file directly and then view it using any text reader.
+
+### Extensions and furthur development
+
+The website and development uses R and Markdown rendered using RMarkdown. The following packages are needed for this to work in a current version of RStudio (>4.0.0).
 
 ```{r}
+
 ```
+
+Coming soon
+
+### Analysis
+
+Coming soon
+
+### Reporting
+
+Coming soon
